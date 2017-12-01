@@ -41,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/app/Resources/views/jq-test.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding>
                 <element signature="e#12#26#0#Twig" expanded="true" />
               </folding>
@@ -228,12 +228,12 @@
       <workItem from="1511892501408" duration="157000" />
       <workItem from="1511900695684" duration="6001000" />
       <workItem from="1511958233480" duration="6181000" />
-      <workItem from="1512049846583" duration="13060000" />
+      <workItem from="1512049846583" duration="15526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36358000" />
+    <option name="totallyTimeSpent" value="38824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="114" width="1920" height="1053" extended-state="6" />
@@ -534,7 +534,7 @@
     <entry file="file://$PROJECT_DIR$/app/Resources/views/jq-test.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
