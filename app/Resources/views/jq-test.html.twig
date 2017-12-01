@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+{% block title %}JQu#$%#4{% endblock %}
+
+{% block scripts %}
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(this).toggleClass("blue");
+            });
+        });
+    </script>
+    <style>
+        .blue {
+            color:blue;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    aeouaue
+    <ul>
+        <li class="blue"><button>Saints</button></li>
+        <li><button>Falcons</button></li>
+        <li><button>Bucs</button></li>
+        <li><button>Panthers</button></li>
+    </ul>
+{% endblock %}
+
+

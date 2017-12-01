@@ -16,10 +16,18 @@ class TestController extends Controller
     /**
      * @Route("/bs-test", name="test")
      */
-    public function testAction(Request $request)
+    public function bsTestAction(Request $request)
     {
         //return $this->render('', array('name' => $name));
 
         return $this->render('bs-test.html.twig');
+    }
+
+    /**
+     * @Route("/jq-test", name="jq-test")
+     */
+    public function jqTestAction(Request $request)
+    {
+        return $this->render('jq-test.html.twig');
     }
 }
