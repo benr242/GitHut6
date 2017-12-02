@@ -5,7 +5,9 @@
     <script>
         $(document).ready(function(){
             $("li").click(function(){
-                $(this).addClass('blue').siblings().removeClass('blue');
+                //$(this).addClass('blue').siblings().removeClass('blue');
+                $('.blue').removeClass('blue');
+                $(this).addClass('blue');
             });
         });
     </script>
