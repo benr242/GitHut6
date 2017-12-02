@@ -14,20 +14,20 @@ class TestController extends Controller
     }
 
     /**
-     * @Route("/bs-test", name="test")
+     * @Route("/test-bs", name="test-bs")
      */
     public function bsTestAction(Request $request)
     {
         //return $this->render('', array('name' => $name));
 
-        return $this->render('bs-test.html.twig');
+        return $this->render('test-bs.html.twig');
     }
 
     /**
-     * @Route("/jq-test", name="jq-test")
+     * @Route("/test-jq", name="test-jq")
      */
     public function jqTestAction(Request $request)
     {
-        return $this->render('jq-test.html.twig');
+        return $this->render('test-jq.html.twig');
     }
 }
