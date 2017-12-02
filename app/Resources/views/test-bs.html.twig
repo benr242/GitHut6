@@ -5,9 +5,15 @@
     <script>
         $(document).ready(function(){
             $("li").click(function(){
-                //$(this).addClass('active').siblings().removeClass('active');
-                $('.active').removeClass('active');
-                $(this).addClass('active');
+                $(this).addClass('active')
+                    .siblings()
+                    .removeClass('active');
+
+                //$('.active').removeClass('active');
+                //$(this).addClass('active');
+
+                //$(this).addClass('active');
+                //$('li').not(this).removeClass('active');
             });
         });
     </script>
@@ -36,10 +42,10 @@
                     <li><a href="http://www.espn.com/nfl/team/_/name/car/carolina-panthers">Panthers</a></li>
                     <li><a href="http://www.espn.com/nfl/team/_/name/tb/tampa-bay-buccaneers">Bucs</a></li>
                     -->
-                    <li class="active"><a href="#">Saints</a></li>
-                    <li><a href="#">Falcons</a></li>
-                    <li><a href="#">Panthers</a></li>
-                    <li><a href="#">Bucs</a></li>
+                    <li class="active"><a href="javascript:void(0)">Saints</a></li>
+                    <li><a href="javascript:void(0)">Falcons</a></li>
+                    <li><a href="javascript:void(0)">Panthers</a></li>
+                    <li><a href="javascript:void(0)">Bucs</a></li>
                 </ul>
             </div>
 
@@ -74,10 +80,10 @@
             <div class="col-md-6" style="background-color: #931c66; min-height: 100px;">
                 bot rig
                 <div class="row">
-                    <div class="col-md-4" style="background-color:palevioletred;">embedded columns</div>
+                    <div class="col-md-4" style="background-color:palevioletred;"><div class="well">embedded columns (well)</div></div>
                     <div class="col-md-8" style="background-color: #5eb5e0;">rold Newton's postgame outfit was a romper, Jordan told reporters, "The romp-him? We romped him good."
 
-                        Newton fired back on Wednesday as the 8-3 teams prepare to meet for the NFC South lead in Sunday's rematch at the Mercedes-Benz Superdome in New Orleans.</div>
+                        Newton <div class="panel">fired back on Wednesday (panel)</div> as the 8-3 teams prepare to meet for the NFC South lead in Sunday's rematch at the Mercedes-Benz Superdome in New Orleans.</div>
                 </div>
             </div>
         </div>
