@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'test-base.html.twig' %}
 {% block title %}Bootstrap#$%#4{% endblock %}
 
 {% block scripts %}
@@ -10,7 +10,11 @@
                     .removeClass('active');
 
 
-                alert($(this).children(1).text());
+                //works--
+                // alert($(this).children('a').text());
+
+                //alert($(this).children(a).text());
+
 
                 //$('.active').removeClass('active');
                 //$(this).addClass('active');
