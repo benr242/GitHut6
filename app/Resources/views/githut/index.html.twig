@@ -1,5 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <p>This will appear inside the container > row > col-sm-12 div</p>
+    <div class="col-sm-3">
+
+        {% include ':githut:profile.html.twig' %}
+
+    </div>
+
+    <div class="col-sm-9">
+        {% include ':githut:repos.html.twig' %}
+    </div>
 {% endblock %}
