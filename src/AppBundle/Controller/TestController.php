@@ -2,6 +2,8 @@
 
 namespace AppBundle\Controller;
 
+use Monolog\Logger;
+use Psr\Log\LoggerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -26,8 +28,9 @@ class TestController extends Controller
     /**
      * @Route("/test-jq", name="test-jq")
      */
-    public function jqTestAction(Request $request)
+    public function jqTestAction(Request $request, LoggerInterface $logger)
     {
+        $logger->info("********************************8 using the logger *************************");
         return $this->render('test-jq.html.twig');
     }
 }
