@@ -22,7 +22,9 @@ class TestController extends Controller
     {
         //return $this->render('', array('name' => $name));
 
-        return $this->render('test-bs.html.twig');
+        return $this->render('test-bs.html.twig', [
+            'brand' => 'NFC South'
+        ]);
     }
 
     /**
@@ -30,7 +32,10 @@ class TestController extends Controller
      */
     public function jqTestAction(Request $request, LoggerInterface $logger)
     {
-        $logger->info("********************************8 using the logger *************************");
+        $logger->info("***************" . get_class($logger) . "******************************************");
+        $mthds = get_class_methods($logger);
+        $logger->info("*************** functioncs: " . $mthds[0] . "******************************************");
+
         return $this->render('test-jq.html.twig');
     }
 }
