@@ -19,14 +19,10 @@ class GitHutController extends Controller
      */
     public function githutAction(Request $request)
     {
-
-        $client = new \GuzzleHttp\Client();
-        $response = $client->request('GET', 'https://api.github.com/users/codereviewvideos');
-
         $templateData = [
-            'username'    => 'benr242',
             'avatar_url'  => 'https://avatars.githubusercontent.com/u/12968163?v=3',
             'name'        => 'Code Review Videos',
+            'username'      => 'benr242',
             'login'       => 'codereviewvideos',
             'details'     => [
                 'company'   => 'Code Review Videos',
