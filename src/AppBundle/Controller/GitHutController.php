@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use GuzzleHttp\Client;
 
 class GitHutController extends Controller
 {
@@ -18,6 +19,10 @@ class GitHutController extends Controller
      */
     public function githutAction(Request $request)
     {
+
+        $client = new \GuzzleHttp\Client();
+        $response = $client->request('GET', 'https://api.github.com/users/codereviewvideos');
+
         $templateData = [
             'username'    => 'benr242',
             'avatar_url'  => 'https://avatars.githubusercontent.com/u/12968163?v=3',
