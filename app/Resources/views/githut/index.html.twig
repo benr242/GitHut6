@@ -2,6 +2,7 @@
 
 {% block body %}
     <div class="col-sm-3">
+        {# probably heavier #}
         {{ render (controller('AppBundle:GitHut:profile', { 'username': username })) }}
         {#{% include ':githut:profile.html.twig' %}#}
     </div>
