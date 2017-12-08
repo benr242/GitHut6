@@ -8,25 +8,30 @@
 
 namespace AppBundle\Service;
 
+use Guzzle\Http\Client;
+
 class GitHubApi
 {
     /**
      * @var HttpClientInterface
      */
     private $httpClient;
-    public function __construct()
+    
+    public function __construct(\GuzzleHttp\Client $client)
     {
-        //$this->httpClient = $httpClient;
+        $this->httpClient = $client;
     }
-    public function getProfile($username, \GuzzleHttp\ClientInterface $client)
+    public function getProfile($username)
     {
-        $response = $client->request('GET', 'https://api.github.com/users/codereviewvideos');
 
-        $data = $this->httpClient->get('https://api.github.com/users/' . $username);
+        $client = new \GuzzleHttp\Client();
+        $response = $client->request('GET', 'https://api.github.com/users/codereviewvideos');
+        $data = json_decode($response->getBody()->getContents(), true);
+
         return [
             'avatar_url'  => $data['avatar_url'],
             'name'        => $data['name'],
-            'login'       => $data['login'],
+            'login'      => $data['login'],
             'details'     => [
                 'company'   => $data['company'],
                 'location'  => $data['location'],
@@ -42,7 +47,10 @@ class GitHubApi
     }
     public function getRepos($username, \GuzzleHttp\ClientInterface $client)
     {
-        $data = $this->httpClient->get('https://api.github.com/users/' . $username . '/repos');
+        //$data = $this->httpClient->get('https://api.github.com/users/' . $username . '/repos');
+        $client = new \GuzzleHttp\Client();
+        $data = $this->httpClient->get('https://api.github.com/users/codereviewvideos/repos');
+
         return [
             'repo_count' => count($data),
             'most_stars' => array_reduce($data, function ($mostStars, $currentRepo) {

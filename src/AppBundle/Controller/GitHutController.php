@@ -10,6 +10,7 @@ use GuzzleHttp\Client;
 
 class GitHutController extends Controller
 {
+
     public function indexAction($name)
     {
         return $this->render('', array('name' => $name));
@@ -18,8 +19,10 @@ class GitHutController extends Controller
     /**
      * @Route("/", name="githut")
      */
-    public function githutAction(Request $request, GitHubApi $gha)
+    public function githutAction(Request $request)
     {
+        $data =
+
         $client = new \GuzzleHttp\Client();
         $response = $client->request('GET', 'https://api.github.com/users/codereviewvideos');
         $data = json_decode($response->getBody()->getContents(), true);
@@ -40,9 +43,6 @@ class GitHutController extends Controller
                 "Followers"    => $data['followers'],
                 "Following"    => $data['following'],
             ],
-            //'repo_count'        => count($data),
-            //'most_stars'        => 42,
-            //'repos'             => $data
         ];
 
         return $this->render('githut/index.html.twig', $templateData);
