@@ -16,13 +16,12 @@ class GitHutController extends Controller
         return $this->render('', array('name' => $name));
     }
 
+
     /**
-     * @Route("/{username}", name="githut")
+     * @Route("/{username}", name="githut", defaults={ "username": "codereviewvideos" })
      */
     public function githutAction(Request $request, GitHubApi $api, $username)
     {
-        //$templateData = $api->getProfile('codereviewvideos');
-
         $templateData = $api->getProfile($username);
 
         return $this->render('githut/index.html.twig', $templateData);
