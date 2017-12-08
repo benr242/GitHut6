@@ -16,21 +16,23 @@ class GitHubApi
      * @var HttpClientInterface
      */
     private $httpClient;
-    
-    public function __construct(\GuzzleHttp\Client $client)
+/*
+    public function __construct(\GuzzleHttp\ClientInterface $client)
     {
-        $this->httpClient = $client;
+        //$this->httpClient = $client;
     }
+*/
     public function getProfile($username)
     {
-
-        $client = new \GuzzleHttp\Client();
-        $response = $client->request('GET', 'https://api.github.com/users/codereviewvideos');
+        $this->httpClient = new \GuzzleHttp\Client();
+        $response = $this->httpClient->request('GET', 'https://api.github.com/users/codereviewvideos');
+        //$response = $this->client->request('GET', 'https://api.github.com/users/codereviewvideos');
         $data = json_decode($response->getBody()->getContents(), true);
 
         return [
             'avatar_url'  => $data['avatar_url'],
             'name'        => $data['name'],
+            'username'    => 'benr242',
             'login'      => $data['login'],
             'details'     => [
                 'company'   => $data['company'],
