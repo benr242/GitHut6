@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Service\GitHubApi;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -17,7 +18,7 @@ class GitHutController extends Controller
     /**
      * @Route("/", name="githut")
      */
-    public function githutAction(Request $request)
+    public function githutAction(Request $request, GitHubApi $gha)
     {
         $client = new \GuzzleHttp\Client();
         $response = $client->request('GET', 'https://api.github.com/users/codereviewvideos');

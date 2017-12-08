@@ -14,12 +14,14 @@ class GitHubApi
      * @var HttpClientInterface
      */
     private $httpClient;
-    public function __construct(HttpClientInterface $httpClient)
+    public function __construct()
     {
-        $this->httpClient = $httpClient;
+        //$this->httpClient = $httpClient;
     }
-    public function getProfile($username)
+    public function getProfile($username, \GuzzleHttp\ClientInterface $client)
     {
+        $response = $client->request('GET', 'https://api.github.com/users/codereviewvideos');
+
         $data = $this->httpClient->get('https://api.github.com/users/' . $username);
         return [
             'avatar_url'  => $data['avatar_url'],
@@ -38,7 +40,7 @@ class GitHubApi
             ]
         ];
     }
-    public function getRepos($username)
+    public function getRepos($username, \GuzzleHttp\ClientInterface $client)
     {
         $data = $this->httpClient->get('https://api.github.com/users/' . $username . '/repos');
         return [
