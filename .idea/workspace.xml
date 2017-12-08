@@ -31,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/GitHutController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="25" column="68" lean-forward="false" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+              <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
               <folding>
                 <element signature="e#40#72#0#PHP" expanded="true" />
               </folding>
@@ -298,12 +298,12 @@
       <workItem from="1512472296317" duration="9518000" />
       <workItem from="1512558413162" duration="13282000" />
       <workItem from="1512646211269" duration="15201000" />
-      <workItem from="1512737210735" duration="16695000" />
+      <workItem from="1512737210735" duration="17512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142540000" />
+    <option name="totallyTimeSpent" value="143357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="114" width="1920" height="1053" extended-state="6" />
@@ -655,7 +655,7 @@
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/GitHutController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="25" column="68" lean-forward="false" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+          <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
           <folding>
             <element signature="e#40#72#0#PHP" expanded="true" />
           </folding>
