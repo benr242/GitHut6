@@ -47,11 +47,14 @@ class GitHubApi
             ]
         ];
     }
-    public function getRepos($username, \GuzzleHttp\ClientInterface $client)
+    public function getRepos($usernamet)
     {
         //$data = $this->httpClient->get('https://api.github.com/users/' . $username . '/repos');
-        $client = new \GuzzleHttp\Client();
-        $data = $this->httpClient->get('https://api.github.com/users/codereviewvideos/repos');
+        //$client = new \GuzzleHttp\Client();
+        $this->httpClient = new \GuzzleHttp\Client();
+        $response = $this->httpClient->request('GET', 'https://api.github.com/users/codereviewvideos/repos');
+
+        $data = json_decode($response->getBody()->getContents(), true);
 
         return [
             'repo_count' => count($data),
