@@ -16,7 +16,7 @@ class TestController extends Controller
     }
 
     /**
-     * @Route("/test-bs", name="test-bs")
+     * @Route("/test/test-bs", name="test-bs")
      */
     public function bsTestAction(Request $request)
     {
@@ -28,7 +28,7 @@ class TestController extends Controller
     }
 
     /**
-     * @Route("/test-jq", name="test-jq")
+     * @Route("/test/test-jq", name="test-jq")
      */
     public function jqTestAction(Request $request, LoggerInterface $logger)
     {

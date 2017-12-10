@@ -16,17 +16,21 @@ class GitHubApi
      * @var HttpClientInterface
      */
     private $httpClient;
-/*
-    public function __construct(\GuzzleHttp\ClientInterface $client)
-    {
+    private $myClient;
+
+    //public function __construct(HttpClientInterface $myClient)
+    //{
         //$this->httpClient = $client;
-    }
-*/
+    //}
+
     public function getProfile($username)
     {
-        $this->httpClient = new \GuzzleHttp\Client();
+        if ($this->httpClient === null)
+            $this->httpClient = new \GuzzleHttp\Client();
+
+        //$this->httpClient = ($this->httpClient === null) ? new \GuzzleHttp\Client() : ;
+
         $response = $this->httpClient->request('GET', 'https://api.github.com/users/codereviewvideos');
-        //$response = $this->client->request('GET', 'https://api.github.com/users/codereviewvideos');
         $data = json_decode($response->getBody()->getContents(), true);
 
         return [
@@ -49,11 +53,10 @@ class GitHubApi
     }
     public function getRepos($usernamet)
     {
-        //$data = $this->httpClient->get('https://api.github.com/users/' . $username . '/repos');
-        //$client = new \GuzzleHttp\Client();
-        $this->httpClient = new \GuzzleHttp\Client();
-        $response = $this->httpClient->request('GET', 'https://api.github.com/users/codereviewvideos/repos');
+        if ($this->httpClient === null)
+            $this->httpClient = new \GuzzleHttp\Client();
 
+        $response = $this->httpClient->request('GET', 'https://api.github.com/users/codereviewvideos/repos');
         $data = json_decode($response->getBody()->getContents(), true);
 
         return [

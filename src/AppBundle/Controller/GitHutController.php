@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Service\GitHubApi;
+use Psr\Log\LoggerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -20,11 +21,14 @@ class GitHutController extends Controller
     /**
      * @Route("/{username}", name="githut", defaults={ "username": "codereviewvideos" })
      */
-    public function githutAction(Request $request, GitHubApi $api, $username)
+    public function githutAction(Request $request, GitHubApi $api, $username, LoggerInterface $logger)
     {
         $templateData = $api->getProfile($username);
+        //$logger->info(json_encode($templateData));
 
-        return $this->render('githut/index.html.twig', $templateData);
+        return $this->render('githut/index.html.twig', [
+            'username' => $username
+        ]);
     }
 
     /**
