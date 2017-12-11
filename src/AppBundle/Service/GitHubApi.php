@@ -29,6 +29,7 @@ class GitHubApi
             $this->httpClient = new \GuzzleHttp\Client();
 
         //$this->httpClient = ($this->httpClient === null) ? new \GuzzleHttp\Client() : ;
+       //$logger->info(json_encode('username:::****' . $username));
 
         $response = $this->httpClient->request('GET', 'https://api.github.com/users/codereviewvideos');
         $data = json_decode($response->getBody()->getContents(), true);

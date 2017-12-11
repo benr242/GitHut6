@@ -23,8 +23,8 @@ class GitHutController extends Controller
      */
     public function githutAction(Request $request, GitHubApi $api, $username, LoggerInterface $logger)
     {
-        $templateData = $api->getProfile($username);
-        //$logger->info(json_encode($templateData));
+        //$templateData = $api->getProfile($username);
+        $logger->info(json_encode('username:::' . $username));
 
         return $this->render('githut/index.html.twig', [
             'username' => $username
