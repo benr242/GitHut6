@@ -24,7 +24,7 @@ class GitHutController extends Controller
     public function githutAction(Request $request, GitHubApi $api, $username, LoggerInterface $logger)
     {
         //$templateData = $api->getProfile($username);
-        $logger->info(json_encode('username:::' . $username));
+        $logger->info(json_encode('username::GitHut: ' . $username));
 
         return $this->render('githut/index.html.twig', [
             'username' => $username
@@ -34,8 +34,10 @@ class GitHutController extends Controller
     /**
      * @Route("/profile/{username}", name="profile", defaults={ "username": "codereviewvideos" })
      */
-    public function profileAction(Request $request, GitHubApi $api, $username)
+    public function profileAction(Request $request, GitHubApi $api, $username, LoggerInterface $logger)
     {
+        $logger->info(json_encode('username::GitHut:profile: ' . $username));
+
         $profileData = $api->getProfile($username);
         return $this->render('githut/profile.html.twig', $profileData);
     }
