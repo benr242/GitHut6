@@ -4,7 +4,7 @@
 {% block scripts %}
     <script>
         $(document).ready(function(){
-            $("li").click(function(){
+            $(".divition li").click(function(){
                 $(this).addClass('active')
                     .siblings()
                     .removeClass('active');
@@ -42,7 +42,7 @@
 
             <!-- MENU ITEMS -->
             <div class="collapse navbar-collapse" id="nfcs">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav divition">
                     <!--
                     <li class="active"><a href="http://www.espn.com/nfl/team/_/name/no/new-orleans-saints">Saints</a></li>
                     <li><a href="http://www.espn.com/nfl/team/_/name/atl/atlanta-falcons">Falcons</a></li>
