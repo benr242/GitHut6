@@ -17,8 +17,8 @@
       <file leaf-file-name="GitHutController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/GitHutController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="11" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+            <state relative-caret-position="0">
+              <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding>
                 <element signature="e#40#72#0#PHP" expanded="true" />
               </folding>
@@ -29,8 +29,8 @@
       <file leaf-file-name="GitHubApi.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/GitHubApi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="60" column="102" lean-forward="false" selection-start-line="60" selection-start-column="102" selection-end-line="60" selection-end-column="102" />
+            <state relative-caret-position="684">
+              <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -39,8 +39,8 @@
       <file leaf-file-name="TestController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TestController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="378">
+              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -49,9 +49,11 @@
       <file leaf-file-name="test-bs.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/test-bs.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="504">
+              <caret line="85" column="25" lean-forward="false" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+              <folding>
+                <element signature="e#12#31#0#Twig" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,35 +68,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/githut/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="198">
-                <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-                <folding />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -152,10 +131,10 @@
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/TestController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/githut/profile.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/GitHutController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/GitHubApi.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/githut/index.html.twig" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/GitHutController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/test-bs.html.twig" />
       </list>
     </option>
@@ -203,8 +182,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,20 +197,20 @@
             <path>
               <item name="GitHut6" type="b2602c69:ProjectViewProjectNode" />
               <item name="GitHut6" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="GitHut6" type="b2602c69:ProjectViewProjectNode" />
               <item name="GitHut6" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,18 +267,24 @@
       <workItem from="1513261644618" duration="602000" />
       <workItem from="1513264708597" duration="5561000" />
       <workItem from="1513345883181" duration="3804000" />
-      <workItem from="1513427329731" duration="1821000" />
+      <workItem from="1513427329731" duration="3125000" />
+      <workItem from="1513520424416" duration="606000" />
+      <workItem from="1513607900870" duration="3567000" />
+      <workItem from="1513803826360" duration="1810000" />
+      <workItem from="1513970544393" duration="1935000" />
+      <workItem from="1514644049470" duration="616000" />
+      <workItem from="1514721856873" duration="6655000" />
+      <workItem from="1514845192919" duration="646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191469000" />
+    <option name="totallyTimeSpent" value="208608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="114" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33547008" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18002136" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -331,7 +314,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TestController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -578,35 +560,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/GitHubApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="60" column="102" lean-forward="false" selection-start-line="60" selection-start-column="102" selection-end-line="60" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TestController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/githut/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -623,27 +580,60 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="198">
             <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/githut/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/GitHutController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="11" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        <state relative-caret-position="0">
+          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="e#40#72#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/GitHubApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/tests/AppBundle/Controller/DefaultControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/test-bs.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="504">
+          <caret line="85" column="25" lean-forward="false" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+          <folding>
+            <element signature="e#12#31#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

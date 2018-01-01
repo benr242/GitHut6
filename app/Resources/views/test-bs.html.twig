@@ -9,6 +9,13 @@
                     .siblings()
                     .removeClass('active');
 
+                //OR
+                //$('.active').removeClass('active');
+                //$(this).addClass('active');
+
+                //OR
+                $(this).addClass('active');
+                $('li').not(this).removeClass('active');
 
                 //works--
                 // alert($(this).children('a').text());
@@ -16,11 +23,7 @@
                 //alert($(this).children(a).text());
 
 
-                //$('.active').removeClass('active');
-                //$(this).addClass('active');
 
-                //$(this).addClass('active');
-                //$('li').not(this).removeClass('active');
             });
         });
     </script>
@@ -74,10 +77,10 @@
         <h1>Bootstrap Layout</h1>
         <div class="row">
             <div class="col-md-3" style="background-color: #999999">
-                left4
+                left3
             </div>
             <div class="col-md-9" style="background-color: green;">
-                right8
+                right9
             </div>
         </div>
         <div class="row">
