@@ -9,8 +9,8 @@ $(document).ready(function(){
         //$(this).addClass('active');
 
         //OR
-        $(this).addClass('active');
-        $('li').not(this).removeClass('active');
+        //$(this).addClass('active');
+        //$('li').not(this).removeClass('active');
 
         //works--
         // alert($(this).children('a').text());
