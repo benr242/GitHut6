@@ -38,8 +38,8 @@ class GitHutController extends Controller
      */
     public function profileAction(Request $request, GitHubApi $api, $username, LoggerInterface $logger)
     {
-        $logger->info(json_encode('username::GitHut:profile: ' . $username));
-
+        //$logger->info(json_encode('username::GitHut:profile: ' . $username));
+        $logger->info("****************" . get_class($logger) . "*****************************");
         $profileData = $api->getProfile($username);
         return $this->render('githut/profile.html.twig', $profileData);
     }
