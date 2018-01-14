@@ -1,6 +1,13 @@
 {% extends 'base.html.twig' %}
 
+{% block scripts %}
+    <script src="{{ asset('js/onclick.js') }}"></script>
+{% endblock %}
+
 {% block body %}
+
+    {% include ':githut:top-nav.html.twig' %}
+
     <div class="col-sm-3">
         {# probably heavier #}
         {{ render (controller('AppBundle:GitHut:profile', { 'username': username })) }}

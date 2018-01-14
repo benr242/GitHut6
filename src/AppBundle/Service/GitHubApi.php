@@ -30,7 +30,7 @@ class GitHubApi
 
     public function getProfile($username)
     {
-        //not needed, probably (from constructor
+        //not needed (from constructor
         //if ($this->httpClient === null)
         //    $this->httpClient = new \GuzzleHttp\Client();
 
@@ -61,7 +61,7 @@ class GitHubApi
     }
     public function getRepos($usernamet)
     {
-        //not needed, probably (from constructor
+        //not needed (from constructor
         //if ($this->httpClient === null)
         //    $this->httpClient = new \GuzzleHttp\Client();
 

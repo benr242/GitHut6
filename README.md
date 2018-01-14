@@ -7,6 +7,6 @@ Testing README
 jquery and bootstrap
 Guzzle: 3rd party http client
 github integration
-
+asynchronous controllers invoked from twig file index.html.twig
 http://localhost:8000/test/test-bs
     bootstrap layout

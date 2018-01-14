@@ -2,9 +2,20 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+
     <title>{% block title %}{{ username }}'s GitHut!{% endblock %}</title>
+
+    {%  block bootstrap %}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" >
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    {% endblock %}
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    {% block scripts %}{% endblock %}
     {% block stylesheets %}{% endblock %}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 </head>
