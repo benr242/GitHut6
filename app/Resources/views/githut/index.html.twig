@@ -6,8 +6,10 @@
 
 {% block body %}
 
-    {% include ':githut:top-nav.html.twig' %}
-
+    <nav class="navbar navbar-default">
+        {% include ':githut:top-nav.html.twig' %}
+    </nav>
+    
     <div class="col-sm-3">
         {# probably heavier #}
         {{ render (controller('AppBundle:GitHut:profile', { 'username': username })) }}
