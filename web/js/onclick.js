@@ -16,5 +16,6 @@ $(document).ready(function(){
         // alert($(this).children('a').text());
 
         //alert($(this).children(a).text());
+        alert("TESTALERT");
     });
 });
