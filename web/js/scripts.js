@@ -6,4 +6,6 @@ $(document).ready(function() {
         //$(this).hide();
         $(this).addClass("blue");
     })
+
+    $('#repolist > li:nth-child(odd)').addClass('altRow');
 })

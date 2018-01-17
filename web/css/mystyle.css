@@ -6,4 +6,8 @@ body {
     color: #0000F0;
 }
 
-li:nth-child(odd) {background: red;}
+.altRow {
+    background:  greenyellow;
+}
+
+
