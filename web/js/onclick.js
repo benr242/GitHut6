@@ -13,9 +13,7 @@ $(document).ready(function(){
         //$('li').not(this).removeClass('active');
 
         //works--
-        // alert($(this).children('a').text());
-
-        //alert($(this).children(a).text());
-        alert($(this).text());
+        //alert($(this).text());
+        alert($(this).children("a").text());
     });
 });
