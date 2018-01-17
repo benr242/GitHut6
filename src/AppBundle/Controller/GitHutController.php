@@ -28,7 +28,7 @@ class GitHutController extends Controller
 
         $logger->info(json_encode('username::GitHut: ' . $username));
 
-        return $this->render('githut/index2.html.twig', [
+        return $this->render('githut/index.html.twig', [
             'username' => $username
         ]);
     }

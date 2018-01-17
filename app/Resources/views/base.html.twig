@@ -10,9 +10,6 @@
         <link rel="stylesheet" type="text/css" >
         <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
-        <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
-
     {% endblock %}
 
     {% block stylesheets %}
@@ -21,12 +18,11 @@
         <link rel="stylesheet" href="{{ asset('css/mystyle.css') }}">
     {% endblock %}
 
-    <!-- must be in head before other js -->
-    {% block jquery %}
+    {% block scripts %}
+        <!-- must be in head before other js -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
     {% endblock %}
-    {% block scripts %}{% endblock %}
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 </head>
 <body>
 
@@ -50,9 +46,5 @@
 
 </div><!-- /.container -->
 
-{% block javoscripts %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-{% endblock %}
 </body>
 </html>

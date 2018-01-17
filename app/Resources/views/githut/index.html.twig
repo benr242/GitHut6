@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block scripts %}
+    {{ parent() }}
     <script src="{{ asset('js/onclick.js') }}"></script>
 {% endblock %}
 
