@@ -3,6 +3,7 @@ $(document).ready(function() {
     $("#demo").html("Hello, World!!!!");
 
     $("#demo").click(function () {
-        $(this).hide();
+        //$(this).hide();
+        $(this).addClass("blue");
     })
 })
