@@ -13,7 +13,6 @@ $(document).ready(function(){
         //$('li').not(this).removeClass('active');
 
         //works--
-        //alert($(this).text());
-        alert($(this).children("a").text());
+        //salert($(this).children("a").text());
     });
 });
