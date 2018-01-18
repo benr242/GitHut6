@@ -2,15 +2,8 @@
 {% block title %}Bootstrap#$%#4{% endblock %}
 
 {% block scripts %}
-    <script src="{{ asset('js/onclick.js') }}"></script>
-    <style>
-        .blue {
-            color:blue;
-        }
-        .red {
-            color: red;
-        }
-    </style>
+    {{ parent() }}
+    <script src="{{ asset('js/nav-click.js') }}"></script>
 {% endblock %}
 
 {% block body %}
