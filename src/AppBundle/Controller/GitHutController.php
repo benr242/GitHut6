@@ -11,7 +11,7 @@ use GuzzleHttp\Client;
 
 class GitHutController extends Controller
 {
-
+//to github
     public function indexAction($name)
     {
         return $this->render('', array('name' => $name));
