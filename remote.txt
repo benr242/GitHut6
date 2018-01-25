@@ -3,4 +3,8 @@ $ git remote -v
 	origin	https://github.com/benr242/GitHut6.git (fetch)
 	origin	https://github.com/benr242/GitHut6.git (push)
 
-------------
+make changes, commit locally
+
+$ git push origin master
+	now github is reflecting local changes 
+
