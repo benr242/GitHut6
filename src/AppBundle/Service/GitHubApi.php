@@ -17,7 +17,7 @@ class GitHubApi
      */
     private $httpClient;
     private $myClient;
-//55555555555555555555555
+//555555555555555555555555
     //public function __construct(HttpClientInterface $myClient)
     //{
         //$this->httpClient = $client;
