@@ -7,4 +7,5 @@ make changes, commit locally
 
 $ git push origin master
 	now github is reflecting local changes 
+	another can $git pull, to get those
 
