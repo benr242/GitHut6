@@ -12,13 +12,14 @@ use Guzzle\Http\Client;
 
 class GitHubApi
 {
-    //to pu//
+    //to pu//again
     /**
      * @var HttpClientInterface
      */
     private $httpClient;
     private $myClient;
 
+    //didnt work because external library
     //public function __construct(HttpClientInterface $myClient)
     //{
         //$this->httpClient = $client;
