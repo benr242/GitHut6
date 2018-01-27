@@ -6,15 +6,13 @@
 {% endblock %}
 
 {% block body %}
-
+    <div id="demo">uaeueou;oe</div>
     <nav class="navbar navbar-default">
         {% include ':githut:top-nav.html.twig' %}
     </nav>
 
     <div class="col-sm-3">
-        {# probably heavier #}
         {{ render (controller('AppBundle:GitHut:profile', { 'username': username })) }}
-        {#{% include ':githut:profile.html.twig' %}#}
     </div>
 
 

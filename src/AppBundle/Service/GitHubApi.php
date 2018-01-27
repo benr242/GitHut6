@@ -12,18 +12,11 @@ use Guzzle\Http\Client;
 
 class GitHubApi
 {
-    //to pu//again
     /**
      * @var HttpClientInterface
      */
     private $httpClient;
     private $myClient;
-
-    //didnt work because external library
-    //public function __construct(HttpClientInterface $myClient)
-    //{
-        //$this->httpClient = $client;
-    //}
 
     public function __construct()
     {
@@ -36,12 +29,11 @@ class GitHubApi
         //if ($this->httpClient === null)
         //    $this->httpClient = new \GuzzleHttp\Client();
 
-        //$this->httpClient = ($this->httpClient === null) ? new \GuzzleHttp\Client() : ;
-       //$logger->info(json_encode('username:::****' . $username));
+       //$this->httpClient = ($this->httpClient === null) ? new \GuzzleHttp\Client() : ;
 
-//      $response = $this->httpClient->request('GET', 'https://api.github.com/users/codereviewvideos');
         $response = $this->httpClient->request('GET', 'https://api.github.com/users/' . $username);
         $data = json_decode($response->getBody()->getContents(), true);
+        //$logger->info(json_encode('username:::****' . $username));
         dump($data);
 
         return [
@@ -63,12 +55,9 @@ class GitHubApi
     }
     public function getRepos($usernamet)
     {
-        //not needed (from constructor
-        //if ($this->httpClient === null)
-        //    $this->httpClient = new \GuzzleHttp\Client();
-
         $response = $this->httpClient->request('GET', 'https://api.github.com/users/' . $usernamet . '/repos');
         $data = json_decode($response->getBody()->getContents(), true);
+        dump($data);
 
         return [
             'repo_count' => count($data),

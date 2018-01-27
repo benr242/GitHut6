@@ -11,21 +11,16 @@ use GuzzleHttp\Client;
 
 class GitHutController extends Controller
 {
-//to github psh
     public function indexAction($name)
     {
         return $this->render('', array('name' => $name));
     }
-
 
     /**
      * @Route("/{username}", name="githut", defaults={ "username": "codereviewvideos" })
      */
     public function githutAction(Request $request, GitHubApi $api, $username, LoggerInterface $logger)
     {
-        //$templateData = $api->getProfile($username);
-
-
         $logger->info(json_encode('username::GitHut: ' . $username));
 
         return $this->render('githut/index.html.twig', [
